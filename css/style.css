@@ -472,12 +472,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .-top-3 {
   top: -0.75rem;
+}
+
+.-top-4 {
+  top: -1rem;
 }
 
 .z-50 {
@@ -497,6 +505,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mt-72 {
@@ -535,6 +558,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50px;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-1\/6 {
   width: 16.666667%;
 }
@@ -559,6 +586,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50px;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .rotate-45 {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -566,6 +597,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -671,6 +706,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../img/character-l.png');
 }
 
+.bg-pattern-characters-spider {
+  background-image: url('../img/spider.jpg');
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -693,6 +732,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-4 {
@@ -723,6 +770,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-52 {
@@ -758,6 +815,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-900 {
+  --tw-text-opacity: 1;
+  color: rgb(113 63 18 / var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -800,6 +867,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
+.hover\:border-gray-200:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -816,6 +888,40 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
+  .sm\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sm\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .sm\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .sm\:container {
+      max-width: 1536px;
+    }
+  }
+
   .sm\:block {
     display: block;
   }
@@ -826,6 +932,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-\[80px\] {
     width: 80px;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -894,6 +1013,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 66.666667%;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -902,6 +1025,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px) {
   .xl\:w-4\/5 {
     width: 80%;
+  }
+
+  .xl\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
   }
 
   .xl\:text-2xl {
