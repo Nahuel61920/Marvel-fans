@@ -7,6 +7,10 @@ module.exports = {
         'character-cap': "url('../img/character-l.png')",
         'pattern-characters-spider': "url('../img/spider.jpg')",
       }),
+      screens:{
+        'xsm': '320px'
+
+      }
     },
   },
   plugins: [],
