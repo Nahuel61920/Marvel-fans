@@ -1,7 +1,12 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'pattern-characters-red': "url('../img/pattern-characters-red.jpg')",
+        'character-cap': "url('../img/character-l.png')",
+      }),
+    },
   },
   plugins: [],
 }
